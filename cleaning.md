@@ -1,0 +1,33 @@
+- Balcony: default 0
+- State of property: concert to a scale. None -> normal
+- Currently leased: delete
+- Availability: delete
+- Surface bedroom 1: None: average of proportion of surface, if studio 0
+- Furnished: None = 0
+- Surface of living room: same as surf. bedrooms
+- Cellar: None=0
+- Surface kitchen: same as before
+- Entry phone: None= 1 for aptments and 0 otherwise
+- Elevator; None = 0
+- Num of showers: None=1 (Bonus compare with num toilets and bahtrooms)
+- Number of facades: depending on the type (flat= 1, villa= 4 etc.)
+- Terrace: None = 0
+- surf terrace : None= 0 or proportion of ... as before
+- Surface of bedroom 2: like before depending of the number of bedrooms
+- Security door: None = 0
+- Access for disabled : None = 0
+- Sewer connection: None=1
+- Frontage width: delete
+- Gas: delete
+- Office surface: delete
+- Total land surface: remove (since we have surf garden and surface of estate)
+- Kitchen type: delete
+- Garden: None = 0
+- Surface garden: None = 0
+- Surface bedroom 3: same as bedroom 2
+- Garage: None =0
+- Number of garages: None = 0
+- Diningroom and surface : delete
+- Dressing, Wash room, Air cond, Domotica, Alarm, Hammam, Fireplace: delete
+- Ground depth: delete
+- delete starting from diningroom
