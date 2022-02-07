@@ -3,7 +3,7 @@ import numpy as np
 
 df = pd.read_csv("./../data_set.csv")
 df = df.replace("None", pd.NA)
-to_drop = df.columns[41:]
+to_drop = df.columns[41:-1]
 df = df.drop(to_drop, axis=1)
 df = df.drop(["Currently leased", "Availability", "Frontage width", "Office surface", "Total land surface", "Kitchen type", "Gas"], axis=1)
 df.drop_duplicates(inplace = True)
