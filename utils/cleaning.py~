@@ -1,0 +1,28 @@
+import pandas as pd
+
+df = pd.read_csv("./../data_set.csv")
+df = df.replace("None", pd.NA)
+df.drop_duplicates(inplace = True)
+df = df.drop(df[df["Price"].isnull()].index)
+
+percentage_none = df.isnull().sum().apply(lambda x : x / 18506 *100))
+df_relevent = df_per.loc[lambda x: x < 60]
+df_filtered = df_per.loc[lambda x: x >= 60]
+index_to_remove = list(df_filtered.index)
+
+new_df = df.drop(columns = index_to_remove)
+
+def int_of_price(x):
+    for d in x.split():
+        if d.isdigit():
+            return int(d)
+
+new_df["Price"] = new_df["Price"].apply(int_of_price)
+
+def clean_subtype(subtype):
+    if "flat---" in subtype:
+        return subtype.replace("flat---", "")
+    else:
+        return subtype
+
+new_df["Subtype of property"] = new_df["Subtype of property"].apply(clean_subtype)
